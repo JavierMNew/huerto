@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Monitor de Riego</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><span class="material-icons">dashboard</span> Monitoreo</a></li>
+                <li><a href="dashboard.html"><span class="material-icons">analytics</span> Gráficos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1><span class="material-icons">analytics</span> Análisis de Datos</h1>
+        <p>Estadísticas semanales y diarias de los sensores.</p>
+
+        <div class="charts-container">
+            <div class="chart-card">
+                <h2><span class="material-icons">water_drop</span> Promedio de Humedad (Semanal)</h2>
+                <canvas id="graficoHumedad"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <h2><span class="material-icons">thermostat</span> Estado del Clima (Semanal)</h2>
+                <canvas id="graficoClima"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <h2><span class="material-icons">light_mode</span> Nivel de Luz (Semanal)</h2>
+                <canvas id="graficoLuz"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
